@@ -1,0 +1,85 @@
+@import url("variables.css");
+@import url("card.css");
+@import url("fonctionnement.css");
+@import url("buttons.css");
+@import url("loader.css");
+@import url("menu.css");
+@import url("header.css");
+* {
+  font-family: "roboto", sans-serif;
+}
+
+.container {
+  padding: 100px;
+}
+
+.btn {
+  background-color: rgba(1, 28, 55, 0);
+  border: 1px solid black;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  width: 20%;
+  transform: scale(1);
+  transition: transform 400ms, background-color 1000ms;
+  transition-delay: 200ms;
+}
+.btn:hover {
+  transform: scale(1.15);
+  background-color: #011c37;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: green;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+
+.form {
+  padding-top: 50px;
+}
+.form__group input {
+  background-color: blue;
+  border-radius: 5px;
+}
+.form__group input:focus {
+  background-color: white;
+}
+.form__group input:not(:focus):invalid {
+  background-color: red;
+}
+
+.conteneur {
+  width: 800px;
+  height: 80px;
+  border: 2px solid black;
+}
+.conteneur .btn-launch {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.conteneur .btn-launch:hover + .pave {
+  transform: scale(1.55, 0.5) translate(760px, 80px);
+}
+.conteneur .pave {
+  width: 40px;
+  height: 30px;
+  background-color: brown;
+  transform: scale(1) translate(0);
+  transition: transform 1000ms;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  background-color: #1a69b3;
+  align-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

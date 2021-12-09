@@ -1,0 +1,62 @@
+* input {
+  appearance: none;
+  border: none;
+}
+* button {
+  cursor: pointer;
+}
+
+.card {
+  width: 95%;
+  height: 300px;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+}
+.card__picture {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card__titre {
+  position: absolute;
+  top: 75%;
+  left: 10px;
+  font-weight: bold;
+}
+.card__town {
+  position: absolute;
+  font-style: italic;
+  top: 85%;
+  left: 10px;
+}
+.card__favorite {
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  color: #807f7f;
+  color: grey;
+  transition: color 600ms;
+}
+.card__favorite:hover {
+  cursor: pointer;
+}
+.card__favorite:checked {
+  color: #9356DC;
+}
+
+.fill {
+  object-fit: cover;
+}
+
+.narrow {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=card.css.map */

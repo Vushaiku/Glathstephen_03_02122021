@@ -1,0 +1,104 @@
+.progress__bar {
+  animation: progress-bar 1000ms;
+}
+.progress__bar-2 {
+  animation: progress-bar 1000ms 300ms;
+}
+.progress__bar-3 {
+  animation-delay: 10s;
+  animation: progress-bar 1000ms 600ms;
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background-color: #c8c6c6;
+  justify-content: space-around;
+}
+.menu__title {
+  width: 50px;
+  border-bottom: 2px solid green;
+}
+.menu__list {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  height: 80px;
+  width: 95%;
+  margin: auto;
+  box-shadow: 2px 5px 5px black;
+}
+.menu__list__name {
+  padding-top: 4px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+.menu__list__resume {
+  padding-top: 4px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: larger;
+  color: grey;
+}
+.menu__list__price {
+  padding-top: 4px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: larger;
+  position: absolute;
+  left: 80%;
+  top: 35%;
+}
+.menu__list__checker {
+  position: absolute;
+  visibility: hidden;
+  top: 0px;
+  left: 100%;
+  width: 20%;
+  height: 80px;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #25c225;
+}
+.menu__list__checker__logo {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.menu__list:hover {
+  transition: box-shadow 400ms, transform 400ms;
+  box-shadow: 5px 10px 10px black;
+  overflow: hidden;
+}
+.menu__list:hover .menu__list__checker {
+  visibility: visible;
+  transition: transform 400ms;
+  transform: translateX(-80px);
+}
+.menu__list:hover .menu__list__price {
+  transition: transform 400ms;
+  transform: translateX(-80px);
+}
+.menu__list:hover .menu__list__checker__logo {
+  transition: transform 600ms;
+  transform: rotate(360deg);
+}
+
+/*# sourceMappingURL=menu.css.map */
