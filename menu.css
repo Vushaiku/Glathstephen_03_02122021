@@ -1,14 +1,27 @@
 .progress__bar {
-  animation: progress-bar 1000ms;
+  animation: fadein 1s;
 }
 .progress__bar-2 {
-  animation: progress-bar 1000ms 300ms;
+  animation: fadein 2000ms;
 }
 .progress__bar-3 {
-  animation-delay: 10s;
-  animation: progress-bar 1000ms 600ms;
+  animation: fadein 3000ms;
 }
 
+@keyframes fadein {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes progress-bar {
   0% {
     transform: translateY(20px);
@@ -16,8 +29,6 @@
   }
   100% {
     opacity: 1;
-  }
-  100% {
     transform: translateY(0px);
   }
 }
