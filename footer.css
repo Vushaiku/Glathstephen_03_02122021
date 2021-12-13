@@ -1,6 +1,7 @@
 .foot {
   background-color: #505050;
   padding-bottom: 20px;
+  margin-top: -20px;
 }
 .foot h3 {
   color: white;

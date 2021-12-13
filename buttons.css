@@ -12,5 +12,20 @@
   color: #d4cece;
   box-shadow: 5px 10px 10px grey;
 }
+.bouton__commander--modifier {
+  border-radius: 35px;
+  width: 300px;
+  height: 70px;
+  font-size: x-large;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  transition: color 200ms, box-shadow 400ms;
+  margin-bottom: 50px;
+}
+.bouton__commander--modifier:hover {
+  color: #d4cece;
+  box-shadow: 5px 10px 10px grey;
+}
 
 /*# sourceMappingURL=buttons.css.map */
