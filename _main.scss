@@ -38,6 +38,12 @@ h1
 a
 {
     text-decoration: none;
+    
+    &:visited, &:active, &:hover
+    {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .btn {
