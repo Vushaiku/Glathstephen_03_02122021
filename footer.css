@@ -1,0 +1,24 @@
+.foot {
+  background-color: #505050;
+  padding-bottom: 20px;
+}
+.foot h3 {
+  color: white;
+  font-family: "shrikhand";
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.foot ul {
+  list-style: none;
+}
+.foot li {
+  font-size: larger;
+  padding-top: 10px;
+  color: white;
+}
+.foot a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=footer.css.map */

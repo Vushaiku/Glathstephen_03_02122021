@@ -33,7 +33,7 @@
 }
 .fonction__step:hover {
   box-shadow: 10px 5px 5px grey;
-  background-color: #FF79DA;
+  background-color: #e2c0fd;
   cursor: pointer;
 }
 .fonction__step:hover .fonction__step__logo {

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch _main.scss:style.css _card.scss:card.css _fonctionnement.scss:fonctionnement.css _buttons.scss:buttons.css _loader.scss:loader.css _menu.scss:menu.css _header.scss:header.css _variables.scss:variables.css"
+    "sass": "sass --watch _main.scss:style.css _card.scss:card.css _fonctionnement.scss:fonctionnement.css _buttons.scss:buttons.css _loader.scss:loader.css _menu.scss:menu.css _header.scss:header.css _variables.scss:variables.css _footer.scss:footer.css"
   },
   "author": "",
   "license": "ISC"
