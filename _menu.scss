@@ -47,6 +47,13 @@ $duration-delay: 300ms;
     }
 }
 
+.retour-acceuil
+{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+
 .carte
 {
     position: relative;
@@ -60,14 +67,14 @@ $duration-delay: 300ms;
     &__titre
     {
         font-family: 'shrikhand', sans-serif;
-        font-size: 28px;
-        
+        font-size: 30px;
+        margin-left: 20px;
     }
 
     &__favori
     {
         position: absolute;
-        top: 6%;
+        top: 3%;
         left: 80%;
         padding-bottom: 40px;
     }
@@ -87,8 +94,9 @@ $duration-delay: 300ms;
         width: 50px;
         border-bottom: 3px solid $tertiary-color;
         text-transform: uppercase;
-        font-weight: bolder;
         color: grey;
+        margin-left: 20px;
+        font-size: 20px;
     }
     &__list
     {
@@ -96,7 +104,7 @@ $duration-delay: 300ms;
         cursor: pointer;
         background-color: white;
         border-radius: 20px;
-        height: 80px;
+        height: 90px;
         width: 95%;
         margin: auto;
         box-shadow: 2px 5px 5px black;
@@ -104,6 +112,7 @@ $duration-delay: 300ms;
         &__name
         {
            @include alignement-text;
+           font-size: 24px;
         }
 
         &__resume
@@ -127,7 +136,7 @@ $duration-delay: 300ms;
             top: 0px;
             left: 100%;
             width: 20%;
-            height: 80px;
+            height: 90px;
             overflow: hidden;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -135,7 +144,7 @@ $duration-delay: 300ms;
             &__logo
             {
                 position: absolute;
-                top: 30%;
+                top: 35%;
                 left: 20%;
             }
         }
