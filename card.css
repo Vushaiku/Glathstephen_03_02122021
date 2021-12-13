@@ -42,12 +42,14 @@
   top: 75%;
   left: 10px;
   font-weight: bold;
+  font-size: 28px;
 }
 .card__town {
   position: absolute;
   font-style: italic;
   top: 85%;
   left: 10px;
+  font-size: 28px;
 }
 .card__favorite {
   position: absolute;
