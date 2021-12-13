@@ -1,3 +1,5 @@
+@import "variables";
+
 *
 {
     input
@@ -12,6 +14,17 @@
     }
 }
 
+.list-card
+{
+    padding-top: 50px;
+    background-color: rgb(195, 194, 194);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .card
 {
     width: 95%;
@@ -21,6 +34,7 @@
     border-radius: 20px;
     position: relative;
     background-color: white;
+    margin-bottom: 50px;
 
     &__picture
     {
@@ -61,7 +75,7 @@
         }
         &:checked
         {
-            color: #9356DC;
+            color: $primary-color;
         }
     }
 }
