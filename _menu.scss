@@ -2,10 +2,14 @@
 
 @mixin alignement-text
 {
-    padding-top: 4px;
+    padding-top: 10px;
     padding-left: 10px;
     font-weight: bold;
     font-size: larger;
+    overflow: hidden;
+    width: 82%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 $duration-delay: 300ms;
@@ -14,21 +18,22 @@ $duration-delay: 300ms;
 {
     &__bar 
     {
-        //animation: progress-bar 1000ms;
         animation: fadein 1s;
     }
 
     &__bar-2
     {
-       // animation: progress-bar 1000ms 300ms;
         animation: fadein 2000ms;
     }
 
     &__bar-3
     {
-        //animation-delay: 10s;
-        //animation: progress-bar 1000ms 600ms;
         animation: fadein 3000ms;
+    } 
+    
+    &__bar-4
+    {
+        animation: fadein 4000ms;
     }
 }
 
@@ -98,44 +103,48 @@ $duration-delay: 300ms;
     }
 }
 
+.menu-title
+{
+        width: 60px;
+        border-bottom: 3px solid $tertiary-color;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: grey;
+        margin-left: 20px;
+        font-size: 28px;
+        margin-bottom: 30px;
+}
+
 .menu
 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 400px;
     background-color: rgb(241, 241, 241);
-    justify-content: space-around;
-    padding-top: 40px;
-    &__title
-    {
-        width: 50px;
-        border-bottom: 3px solid $tertiary-color;
-        text-transform: uppercase;
-        color: grey;
-        margin-left: 20px;
-        font-size: 20px;
-    }
+    justify-content: space-between;
+    margin-bottom: 40px;
     &__list
     {
         position: relative;
         cursor: pointer;
         background-color: white;
         border-radius: 20px;
-        height: 90px;
+        height: 100px;
         width: 95%;
         margin: auto;
         box-shadow: 2px 5px 5px black;
+        margin-bottom: 30px;
 
         &__name
         {
            @include alignement-text;
-           font-size: 24px;
+           font-size: 30px;
         }
 
         &__resume
         {
             @include alignement-text;
+            font-size: 24px;
             color: grey;
         }
 
@@ -145,6 +154,7 @@ $duration-delay: 300ms;
             position: absolute;
             left: 80%;
             top: 35%;
+            font-size: 24px;
         }    
 
         &__checker
@@ -153,17 +163,18 @@ $duration-delay: 300ms;
             visibility: hidden;
             top: 0px;
             left: 100%;
-            width: 20%;
-            height: 90px;
+            width: 40%;
+            height: 100%;
             overflow: hidden;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             background-color: $tertiary-color;
             &__logo
             {
+                color: white;
                 position: absolute;
                 top: 35%;
-                left: 20%;
+                left: 13%;
             }
         }
         &:hover
@@ -175,12 +186,12 @@ $duration-delay: 300ms;
             {
                 visibility: visible;
                 transition: transform 400ms;
-                transform: translateX(-80px);
+                transform: translateX(-100px);
             }
             .menu__list__price
             {
                 transition: transform 400ms;
-                transform: translateX(-80px);
+                transform: translateX(-100px);
             }
             
             .menu__list__checker__logo
