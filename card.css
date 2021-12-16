@@ -37,6 +37,22 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+.card .new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: green;
+  top: 5%;
+  left: 70%;
+  width: 22%;
+  height: 12%;
+  line-height: 15%;
+  font-size: 24px;
+  font-weight: bolder;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card__titre {
   position: absolute;
   top: 75%;
@@ -61,8 +77,6 @@
 }
 .card__favorite:hover {
   cursor: pointer;
-}
-.card__favorite:checked {
   color: #9356DC;
 }
 

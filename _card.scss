@@ -52,6 +52,24 @@
         border-top-right-radius: 20px;
     }
 
+    .new
+    {
+        position: absolute;
+        background-color: $tertiary-color;
+        color: green;
+        top: 5%;
+        left: 70%;
+        width: 22%;
+        height: 12%;
+        line-height: 15%;
+        font-size: 24px;
+        font-weight: bolder;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
     &__titre
     {
         position: absolute;
@@ -80,9 +98,6 @@
         &:hover
         {
             cursor: pointer;
-        }
-        &:checked
-        {
             color: $primary-color;
         }
     }
