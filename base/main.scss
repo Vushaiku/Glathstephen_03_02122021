@@ -1,0 +1,61 @@
+@import "../components/buttons";
+@import "../components/loader";
+@import "../layouts/footer";
+@import "../layouts/header";
+@import "../layouts/menu";
+@import "../pages/card";
+@import "../pages/fonctionnement";
+@import "../utils/variables";
+
+*
+{
+    font-family: 'roboto', sans-serif;
+}
+
+h1
+{
+    text-decoration: none;
+    font-size: xx-large;
+    font-family: 'shrikhand', sans-serif;
+    text-align: center;
+}
+
+
+.container
+{
+    padding: 100px;
+}
+
+a
+{
+    text-decoration: none;
+    
+    &:visited, &:active, &:hover
+    {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+.form
+{
+    padding-top: 50px;
+    &__group
+    {
+        & input
+        {
+            background-color: blue;
+            border-radius: 5px;
+            &:focus
+            {
+                background-color: white;
+            }
+            &:not(:focus):invalid
+            {
+                background-color: red;
+            }
+        }
+    }
+}
+

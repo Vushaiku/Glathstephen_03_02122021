@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.bouton
+{
+    &__commander
+    {
+        border-radius: 35px;
+        width: 300px;
+        height: 70px;
+        font-size: x-large;
+        background: linear-gradient($secondary-color, $primary-color);
+        color: white;
+        border: none;
+        transition: color 200ms, box-shadow 400ms;
+
+        &:hover
+        {
+            color: rgb(212, 206, 206);
+            box-shadow: 5px 10px 10px grey;
+        }
+
+        &--modifier
+        {
+        border-radius: 35px;
+        width: 300px;
+        height: 70px;
+        font-size: x-large;
+        background: linear-gradient($secondary-color, $primary-color);
+        color: white;
+        border: none;
+        transition: color 200ms, box-shadow 400ms;
+        margin-bottom: 50px;
+        &:hover
+        {
+            color: rgb(212, 206, 206);
+            box-shadow: 5px 10px 10px grey;
+        }
+           
+        }
+    }
+}
+
